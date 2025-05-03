@@ -1,0 +1,211 @@
+/* AdminDashboard.css */
+
+/* Overall Layout */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  background: url("../Assets/wpImg4.jpg" );
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: transparent; 
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px; /* Smaller gap */
+}
+
+.title {
+  font-size: 2.5em;
+  background-color: transparent;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #006400;
+  font-weight: 800;
+  padding: 8px;
+  font-size: 1.2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-links .selected {
+  background-color: #006400;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 2px solid #006400;
+  background-color: transparent;
+  color: #006400;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 800;
+  font-size: 1.2em;   
+  margin-right: 80px;
+}
+
+.logout-button:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Header Styling */
+.main-header {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #90EE90; /* Light Green */
+  border-radius: 8px;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #006400; /* Dark Green */
+  font-weight: 800;
+}
+
+/* Card Layout */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #e6ffed; /* Light Green Background */
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(33% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #006400; /* Dark Green */
+}
+
+.card p {
+  font-size: 1.2em;
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #32CD32; /* Icon color */
+}
+
+/* Footer */
+.footer {
+  margin-top: 150px;
+}
+
+.footer-line {
+  height: 40px;
+  background-color: rgba(0, 100, 0, 0.1); /* Dark Green */
+  width: 100%;
+}
+.complaint-dropdown {
+  width: 200px; /* Smaller width */
+  padding: 10px 10px; /* Adjust padding for compact look */
+  font-size: 1em; /* Slightly smaller font size */
+  color: #006400;
+  font-weight: 800;
+  background-color: transparent;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.complaint-dropdown:hover {
+  background-color: #006400;
+  color: #fff;
+}
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.chart-container {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.bar-chart {
+  margin-left: 150px;
+  width: 43%;  /* Adjust the width of the Bar Chart */
+}
+
+.pie-chart {
+  margin-right: 250px;
+  width: 21%;  /* Adjust the width of the Pie Chart */
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+

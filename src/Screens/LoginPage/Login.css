@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.LoginBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../Assets/wpImg44.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo img {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: auto;
+    z-index: 1000;
+}
+
+/* Login Wrapper Styling */
+.LoginWrapper {
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Add semi-transparency */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    backdrop-filter: blur(15px); /* Apply a stronger blur effect */
+    border-radius: 20px; /* Increased rounding for modern look */
+    color: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    text-align: center;
+}
+
+/* Form Box */
+.LoginWrapper .form-box {
+    width: 100%;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+form h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Input Box Styling */
+form .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input, .input-box select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(248, 242, 242, 0.838); /* Subtle border */
+    outline: none;
+    border-radius: 30px; /* Softer edges */
+    font-size: 24px;
+    color: #fff;
+    padding: 0 50px; /* Adjust padding for icon space */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus, .input-box select:focus {
+    border-color: #3CA680; /* Highlight on focus */
+}
+
+/* Input Box Icons */
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+.input-box .toggle-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Combo Box Styling */
+.custom-select {
+    appearance: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.953);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.custom-select option {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Error Styling */
+.input-box.error input {
+    border-color: red;
+}
+
+/* Remember Me and Forgot Password */
+form .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: large;
+}
+
+form .remember-forgot a {
+    color: yellow;
+    text-decoration: none;
+}
+
+form .remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+form button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #3CA680;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #fff;
+    color: #3CA680;
+}
+
+/* Register Link */
+form .register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: #3CA680;
+}
+.input-box.error input {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

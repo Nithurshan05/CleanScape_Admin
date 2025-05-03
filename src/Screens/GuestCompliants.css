@@ -1,0 +1,252 @@
+/* Overall Layout */
+.manage-complaints {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 900;
+  color: #006400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #006400;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.nav-links .selected {
+  background-color: #006400;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 2px solid #006400;
+  background-color: transparent;
+  color: #006400;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.logout-button:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.main-header {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #90EE90;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #006400;
+  font-weight: 800;
+}
+
+/* Complaint List */
+.complaint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.complaint-item {
+  background-color: #e6ffed;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-size: larger;
+}
+.complaint-status{
+  font-size: 1.2em;
+  color: #000;
+  margin-right: 50px;
+  font-weight: 600;
+
+}
+
+.complaint-description {
+  flex: 1;
+}
+
+.complaint-actions button {
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  font-size: large;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px;
+}
+
+.view-problem {
+  background-color: #e0e7ff; /* Light Blue */
+}
+
+.solve-problem {
+  background-color: #4CAF50; /* Light Green */
+}
+
+.pending-problem {
+  background-color: #ffecb3; /* Light Yellow */
+}
+
+.reject-problem {
+  background-color: #fdd4d4; /* Light Red */
+}
+
+.complaint-actions button:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+}
+
+.footer-line {
+  border-top: 1px solid #006400;
+}
+/* Styles for the GuestComplaints component buttons */
+
+.view-problem {
+  background-color: #4CAF50; /* Green for View */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.solve-problem {
+  background-color: #008CBA; /* Blue for Solve */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pending-problem {
+  background-color: #FFA500; /* Orange for Pending */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.reject-problem {
+  background-color: #f44336; /* Red for Reject */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Add a hover effect */
+.view-problem:hover {
+  background-color: #45a049;
+}
+
+.solve-problem:hover {
+  background-color: #007bb5;
+}
+
+.pending-problem:hover {
+  background-color: #ff8c00;
+}
+
+.reject-problem:hover {
+  background-color: #d32f2f;
+}
+/* Status Message */
+.status-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.solved-bg {
+  background-color: #b3d9ff; /* Light blue */
+}
+
+.pending-bg {
+  background-color: #ffe4b3; /* Light orange */
+}
+
+.rejected-bg {
+  background-color: #ffcccc; /* Light red */
+}
+
+.message-box {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border-left: 4px solid #4caf50;
+  color: #333;
+  font-weight: bold;
+}

@@ -1,0 +1,259 @@
+/* Overall Layout */
+.manage-user {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 900;
+  color: #006400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #006400;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.nav-links .active {
+  background-color: #006400;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.logout-button {
+  padding: 8px 16px;
+  border: 2px solid #006400;
+  background-color: transparent;
+  color: #006400;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.logout-button:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.main-header {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #90EE90;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #006400;
+  font-weight: 800;
+}
+
+/* user List */
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-item {
+  background-color: #e6ffed;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-size: larger;
+}
+
+.user-description {
+  flex: 1;
+}
+
+.user-actions button:hover {
+  background-color: #006400;
+  color: #fff;
+}
+.view-data {
+  background-color: #e0e7ff; /* Light Blue */
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.edit-data {
+  background-color: #4CAF50; /* Light Green */
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 20px;
+  font-size: large;
+}
+
+.delete-data {
+  background-color: #fdd4d4; /* Light Red */
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 20px;
+  font-size: large;
+}
+
+/* Search Bar and Add Button */
+.heading-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 25%;
+}
+.search-button{   
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #006400;
+  color: white;
+  font-size: 18px;
+  margin-right: 1000px;
+}
+.add-user-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #006400;
+  color: white;
+  font-size: 18px;
+  margin-right: -1600px;
+}
+
+.search-button:hover, .add-user-button:hover {
+  background-color: #004c00;
+}
+
+/* Dropdown Styling */
+.user-selector {
+  padding: 8px;
+  border: 2px solid #006400;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #006400;
+}
+
+/* Overlay and Edit Box Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-box {
+  background-color: #D0F8EB;
+  width: 800px;
+  padding: 20px;
+  border: 1px solid #f7f2ad;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.edit-box h3 {
+  background-color: #228B22;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.edit-box input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #b7ab05e8;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.edit-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.edit-box button:first-child {
+  background-color: #228B22;
+  color: white;
+}
+
+.edit-box button:last-child {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+/* Hover Effects */
+.edit-box button:hover {
+  opacity: 0.9;
+}
+

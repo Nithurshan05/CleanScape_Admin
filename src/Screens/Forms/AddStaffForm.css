@@ -1,0 +1,108 @@
+/* General Form Styles */
+.form-container {
+    width: 800px;
+    height: 1100px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #f7f2ad;
+    border-radius: 10px;
+    background-color: #D0F8EB;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #228B22;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  
+  input[type="text"], 
+  input[type="email"], 
+  input[type="password"], 
+  textarea, 
+  select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #b7ab05e8;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  
+  textarea {
+    resize: none;
+    
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 50px;
+  }
+  
+  .avatar-preview {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 50px;
+  }
+  
+  /* Button Styling */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .back-btn, .register-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .register-btn {
+    background-color: #228B22; /* Green */
+    color: white;
+    border: none;
+  }
+  
+  /* Hover effects */
+  .back-btn:hover, .register-btn:hover {
+    opacity: 0.9;
+  }
+  
